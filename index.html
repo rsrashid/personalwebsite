@@ -1,54 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reem Rashid</title>
+    <!-- Page title -->
+    <title>Reem Rashid Website</title>
+    <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="style.css">
+    <!-- Link to Font Awesome for icons -->
     <script src="https://kit.fontawesome.com/54b905239a.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="header">
     <div class="container">
+        <!-- Navigation bar -->
         <nav>
+            <!-- Logo -->
             <a href="#" class="logo">Portfolio.</a>
+            <!-- Side menu -->
             <ul id="sidemenu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <!-- Close menu icon -->
                 <i class="fas fa-times" onclick="closemenu()"></i> 
             </ul>  
-            <i class="fas fa-bars"" onclick="openmenu()"></i> 
+            <!-- Open menu icon -->
+            <i class="fas fa-bars" onclick="openmenu()"></i> 
         </nav>
+        <!-- Header text -->
         <div class="header-text">
             <h1>Hello, I'm <span>Reem Rashid</span>!</h1>
             <h2>Bridging Imagination and Technology in the World of a Computer Science Student.</h2>
         </div>
     </div>
 </div>
-<!-- ----------about--------- -->
+
+<!-- About section -->
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="Images/comp.png">
+                <!-- Image for the about section -->
+                <img src="images/comp.png">
             </div>
             <div class="about-col-2">
+                <!-- About Me content -->
                 <h1 class="sub-title">About Me</h1>
-                <h2>I'm a Computer Science undergraduate student at the University of Alberta. My passion lies in utilizing technology to find practical solutions and generate innovative ideas. Through my coursework, I have acquired proficiency in various programming languages including HTML, CSS, Python, C, SQL, and more. My technical skills and knowledge in software development and data analysis are diverse and comprehensive. Furthermore, I possess a natural talent for mathematics and have pursued courses in calculus, linear algebra, and statistics to complement my computer science education.</h2>
-
+                <h2><span>Are you seeking a driven and innovative Computer Science undergraduate student to join your team? Look no further!</span><br><br> As a passionate and skilled individual from the University of Alberta, I am dedicated to harnessing technology to create real-world solutions and foster cutting-edge ideas. My extensive coursework has honed my expertise in programming languages such as HTML, CSS, Python, C, SQL, and more. With a diverse skill set in software development and data analysis, I bring a comprehensive approach to problem-solving. Additionally, my innate aptitude for mathematics, complemented by courses in calculus, linear algebra, and statistics, further strengthens my capabilities.<br>I am eager to collaborate with your organization and bring fresh ideas to the table. Let's connect and explore how my passion for technology and dedication to excellence can contribute to your company's success. Get in touch today, and let's build a brighter future together!</h2>
             </div>
         </div>
     </div>
 </div>
-<!-- ------------skills------------ -->
+
+<!-- Skills section -->
 <div id="skills">
     <div class="container">
+        <!-- Skills heading -->
         <h1 class="sub-title">My Skills</h1>
         <div class="skills-list">
+            <!-- Front-End Development skills -->
             <div>
                 <i class="fas fa-code"></i>
                 <h2>Front-End Development</h2>
@@ -56,6 +71,7 @@
                 <p>CSS</p>
                 <p>JavaScript</p>
             </div>
+            <!-- Back-End Development skills -->
             <div>
                 <i class="fas fa-gear"></i>
                 <h2>Back-End Development</h2>
@@ -64,6 +80,7 @@
                 <p>SQL</p>
                 <p>MongoDB</p>
             </div>
+            <!-- Learning skills -->
             <div>
                 <i class="fa-solid fa-laptop-code"></i>
                 <h2>Learning</h2>
@@ -72,42 +89,49 @@
                 <p>Vue</p>
             </div>
         </div>
-
     </div>
 </div>
 
-<!-- ---------portfolio--------- -->
+<!-- Portfolio section -->
 <div id="portfolio">
     <div class="container">
+        <!-- Portfolio heading -->
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
+            <!-- Portfolio items -->
             <div class="work">
-                <img src="Images/work-4.png">
+                <img src="images/work-4.png">
+                <!-- Layer with project details -->
                 <div class="layer">
                     <h3>Chatbot</h3>
                     <p>COMING SOON!!</p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
-            
-            </div>
+            <!-- Add more portfolio items here -->
         </div>
+        <!-- Button to see more portfolio items -->
         <a href="#"class="btn">See more</a>
     </div>
 </div>
-<!-- ---------contact--------- -->
+
+<!-- Contact section -->
 <div id="contact">
     <div class="container">
         <div class="row">
+            <!-- Contact information -->
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p> <i class="fa-solid fa-envelope"></i>reemsrashid8@gmail.com</p>
+                <p><i class="fa-solid fa-envelope"></i>reemsrashid8@gmail.com</p>
+                <!-- Social media icons -->
                 <div class="social-icons">
                     <a href="http://www.linkedin.com/in/reemsrashid"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/rsrashid"><i class="fa-brands fa-square-github"></i></a>
                 </div>
-                <a href="Images/ReemRashidResume.pdf" class="btn btn2">Resume</a>
+                <!-- Link to the resume -->
+                <a href="images/ReemRashidResume.pdf" class="btn btn2">Resume</a>
             </div>
+            <!-- Contact form -->
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
@@ -115,45 +139,41 @@
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <!-- Message status after form submission -->
                 <span id="msg"></span>
             </div>
         </div>
     </div>
+    <!-- Footer -->
     <div class="copyright">
-        <p> <i class="fa-regular fa-copyright"></i> Reem Rashid. All rights reserved.</p> 
+        <p><i class="fa-regular fa-copyright"></i> Reem Rashid. All rights reserved.</p> 
     </div>
 </div>
 
-
-
+<!-- Script to open/close the side menu -->
 <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-
-<script>
-    
     var sidemenu = document.getElementById("sidemenu");
 
-    function openmenu(){
+    function openmenu() {
         sidemenu.style.right = "0";
     }
+
     function closemenu() {
         sidemenu.style.right = "-200px";
     }
+
+    // Add the following code to close the menu by default on smaller screens
+    function closeMenuOnSmallScreens() {
+        if (window.innerWidth <= 600) {
+            closemenu();
+        }
+    }
+
+    // Call the closeMenuOnSmallScreens() function on page load
+    closeMenuOnSmallScreens();
 </script>
 
+<!-- Script to submit form data to Google Sheets -->
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxBX9AzQXtndCwCypUQCjxX-9JnPjBaEyZKvo2C_eXRXPBcXwbVbQqE0kRY9DjPOfg/exec'
     const form = document.forms['submit-to-google-sheet']
@@ -171,6 +191,6 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
+</script>
 </body>
 </html>
