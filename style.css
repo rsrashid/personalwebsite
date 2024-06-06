@@ -18,7 +18,7 @@ html{
 
 /* Body styles */
 body {
-    background: #2b0745;
+    background: #05281e;
     color: #fff;
 }
 
@@ -26,7 +26,7 @@ body {
 #header{
     width: 100%;
     height: 100vh;
-    background-color: #2b0745;
+    background-color: #05281e;
     background-size: cover;
     background-position: center;
 }
